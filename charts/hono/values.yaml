@@ -24,7 +24,7 @@
 # the container images for Hono's components should be pulled from.
 # The registry can also be set separately for each component, overriding
 # the value specified here.
-honoContainerRegistry: index.docker.io
+honoContainerRegistry: localhost:5000
 
 # livenessProbeInitialDelaySeconds contains the default value to use
 # for the "initialDelaySeconds" configuration property of a Hono
@@ -432,7 +432,7 @@ adapters:
     enabled: true
     # imageName contains the name (excluding registry)
     # of the container image to use for the AMQP adapter
-    imageName: eclipse/hono-adapter-amqp-vertx
+    imageName: lntnxt/hono-adapter-amqp-vertx
     # imageTag contains the tag of the container image to deploy.
     # If not specified, the value of the honoImagesTag property is used.
     # imageTag:
@@ -526,7 +526,7 @@ adapters:
     enabled: false
     # imageName contains the name (excluding registry)
     # of the container image to use for the CoAP adapter
-    imageName: eclipse/hono-adapter-coap-vertx
+    imageName: lntnxt/hono-adapter-coap-vertx
     # imageTag contains the tag of the container image to deploy.
     # If not specified, the value of the honoImagesTag property is used.
     # imageTag:
@@ -611,7 +611,7 @@ adapters:
     enabled: true
     # imageName contains the name (excluding registry)
     # of the container image to use for the HTTP adapter
-    imageName: eclipse/hono-adapter-http-vertx
+    imageName: lntnxt/hono-adapter-http-vertx
     # imageTag contains the tag of the container image to deploy.
     # If not specified, the value of the honoImagesTag property is used.
     # imageTag:
@@ -705,7 +705,7 @@ adapters:
     enabled: false
     # imageName contains the name (excluding registry)
     # of the container image to use for the Kura adapter
-    imageName: eclipse/hono-adapter-kura
+    imageName: lntnxt/hono-adapter-kura
     # imageTag contains the tag of the container image to deploy.
     # If not specified, the value of the honoImagesTag property is used.
     # imageTag:
@@ -799,7 +799,7 @@ adapters:
     enabled: false
     # imageName contains the name (excluding registry)
     # of the container image to use for the LoRa adapter
-    imageName: eclipse/hono-adapter-lora-vertx
+    imageName: lntnxt/hono-adapter-lora-vertx
     # imageTag contains the tag of the container image to deploy.
     # If not specified, the value of the honoImagesTag property is used.
     # imageTag:
@@ -892,7 +892,7 @@ adapters:
     enabled: true
     # imageName contains the name (excluding registry)
     # of the container image to use for the MQTT adapter
-    imageName: eclipse/hono-adapter-mqtt-vertx
+    imageName: lntnxt/hono-adapter-mqtt-vertx
     # imageTag contains the tag of the container image to deploy.
     # If not specified, the value of the honoImagesTag property is used.
     # imageTag:
@@ -986,7 +986,7 @@ authServer:
 
   # imageName contains the name (excluding registry)
   # of the container image to use for the Auth Server
-  imageName: eclipse/hono-service-auth
+  imageName: lntnxt/hono-service-auth
   # imageTag contains the tag of the container image to deploy.
   # If not specified, the value of the honoImagesTag property is used.
   # imageTag:
@@ -1181,7 +1181,7 @@ deviceRegistryExample:
   fileBasedDeviceRegistry:
     # imageName contains the name (excluding registry)
     # of the container image for the example file based device registry.
-    imageName: eclipse/hono-service-device-registry-file
+    imageName: lntnxt/hono-service-device-registry-file
     # imageTag contains the tag of the container image to deploy.
     # If not specified, the value of the honoImagesTag property is used.
     # imageTag:
@@ -1210,7 +1210,7 @@ deviceRegistryExample:
   mongoDBBasedDeviceRegistry:
     # imageName contains the name (excluding registry)
     # of the container image for the example MongoDB based device registry.
-    imageName: eclipse/hono-service-device-registry-mongodb
+    imageName: lntnxt/hono-service-device-registry-mongodb
     # imageTag contains the tag of the container image to deploy.
     # If not specified, the value of the honoImagesTag property is used.
     # imageTag:
@@ -1249,7 +1249,7 @@ deviceRegistryExample:
   jdbcBasedDeviceRegistry:
     # imageName contains the name (excluding registry)
     # of the container image for the example jdbc based device registry.
-    imageName: eclipse/hono-service-device-registry-jdbc
+    imageName: lntnxt/hono-service-device-registry-jdbc
     # imageTag contains the tag of the container image to deploy.
     # If not specified, the value of the honoImagesTag property is used.
     # imageTag:
@@ -1375,7 +1375,7 @@ deviceConnectionService:
 
   # imageName contains the name (excluding registry)
   # of the container image to use for the Device Connection service
-  imageName: eclipse/hono-service-device-connection
+  imageName: lntnxt/hono-service-device-connection
   # imageTag contains the tag of the container image to deploy.
   # If not specified, the value of the honoImagesTag property is used.
   # imageTag:
@@ -1489,7 +1489,7 @@ commandRouterService:
 
   # imageName contains the name (excluding registry)
   # of the container image to use for the Command Router service
-  imageName: eclipse/hono-service-command-router
+  imageName: lntnxt/hono-service-command-router
   # imageTag contains the tag of the container image to deploy.
   # If not specified, the value of the honoImagesTag property is used.
   # imageTag:
